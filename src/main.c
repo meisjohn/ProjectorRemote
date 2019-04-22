@@ -25,11 +25,10 @@ void handle_commands(void *pvParameter)
         {
             send_power_standby();
         }
-    }
 
     //prevent receipt of tasks too quickly.
     vTaskDelay(1000 / portTICK_PERIOD_MS);
-
+    }
 }
 
 void app_main()
